@@ -50,7 +50,13 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo-web {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -67,7 +73,13 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+.header-logo {
+  margin-right: 93px;
+}
 
+.header-list {
+  display: flex;
+}
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -82,7 +94,13 @@ img {
   letter-spacing: 0.02em;
   color: var(--additional-color);
 }
-
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-list-contact {
+  display: flex;
+  margin-left: auto;
+}
 .header-link:hover,
 .header-link:focus,
 .header-contact:hover,
@@ -102,8 +120,14 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   color: #ffffff;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
   margin-bottom: 30px;
 }
 .hero-btn {
@@ -117,9 +141,8 @@ img {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 .hero-btn:focus,
 .hero-btn:hover {
@@ -131,6 +154,9 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.advantages-list {
+  display: flex;
+}
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -138,6 +164,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-post-title {
@@ -151,18 +180,33 @@ img {
 .about {
   padding-bottom: 94px;
 }
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
 .about-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 50px;
+  text-align: center;
 }
 /* team */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
+}
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 .team-item img {
   margin-bottom: 30px;
@@ -173,6 +217,8 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-name {
   font-weight: 500;
@@ -181,12 +227,14 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 .team-post-name {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--additional-color);
+  text-align: center;
 }
 
 /* footer */
@@ -200,7 +248,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent);
-  margin-bottom: 20px;
 }
 .footer-logo-studio {
   font-family: Raleway;
@@ -209,14 +256,18 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 20px;
+}
+.footer-address {
+  margin-top: 20px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer-contact-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  margin-bottom: 9px;
 }
 .footer-contact {
   font-size: 14px;
@@ -230,7 +281,11 @@ img {
   color: var(--accent);
 }
 /* work */
-.work-button {
+.work-list {
+  display: flex;
+  justify-content: center;
+}
+.work-list {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -238,11 +293,48 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
   cursor: pointer;
+  padding-top: 100px;
+  margin-bottom: 56px;
 }
+.work-button {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.work-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .work-button:focus,
 .work-button:hover {
   color: white;
+  background-color: var(--accent);
 }
+.portfolio-item {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  padding-bottom: 94px;
+}
+
+.portfolio-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
 .portfolio-list img {
   margin-bottom: 20px;
 }
