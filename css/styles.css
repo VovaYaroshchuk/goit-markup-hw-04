@@ -124,10 +124,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
   margin: 0 auto;
   display: block;
   text-align: center;
@@ -148,6 +144,7 @@ img {
   border-radius: 4px;
   margin: 0 auto;
   display: block;
+  border: none;
 }
 .hero-btn:focus,
 .hero-btn:hover {
@@ -169,6 +166,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 .advantages-item:not(:last-child) {
   margin-right: 30px;
@@ -179,6 +177,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--additional-color);
+  width: 270px;
+  height: 75px;
 }
 
 /* about */
@@ -335,8 +335,6 @@ img {
 .portfolio-item {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  width: 370px;
-  height: 404px;
 }
 .portfolio-list {
   display: flex;
@@ -362,10 +360,15 @@ img {
   letter-spacing: 0.06em;
   color: var(--main-color);
   margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--additional-color);
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
