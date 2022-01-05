@@ -123,14 +123,15 @@ img {
 }
 /* hero */
 .hero {
-  background: rgba(47, 48, 58, 0.4);
+  background-color: #c4c4c4;
   background-image: url(../images/hero.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .hero-title {
@@ -269,14 +270,22 @@ img {
   letter-spacing: 0.03em;
   color: var(--additional-color);
   text-align: center;
+  margin-bottom: 16px;
 }
-
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
 .social-icon-link {
   width: 44px;
   height: 44px;
+  padding: 12px;
   display: block;
   background-color: white;
   border-radius: 50%;
+}
+.social-icon-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icon-item {
@@ -284,8 +293,20 @@ img {
 }
 .social-icon-item:hover {
   fill: #ffffff;
+}
+.social-icon-link:hover {
   background-color: var(--accent);
-  border-radius: 50%;
+  fill: #ffffff;
+}
+/* Clients */
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 /* footer */
 .footer {
