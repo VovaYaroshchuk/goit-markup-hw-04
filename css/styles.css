@@ -48,8 +48,6 @@ img {
 
 /* header */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border: 1px solid #ececec;
 }
 .header-container {
@@ -96,9 +94,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--additional-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 .header-list-contact {
   display: flex;
@@ -467,9 +467,12 @@ img {
 .portfolio-item {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -478,10 +481,10 @@ img {
   padding-bottom: 94px;
 }
 
-.portfolio-item {
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+.portfolio-item:focus,
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list img {
